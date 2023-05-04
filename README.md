@@ -76,53 +76,53 @@ Extractive QA:
 
 1. XQuAD, TyDiQA, MLQA, SQuAD
    ```angular2html
-    Input: Answer the question according to the context. Question: {question}. Context: {context}. Answer:
-    Output: {Answer}
+    Input: Answer the question according to the context. Question: ${question}. Context: ${context}. Answer:
+    Output: ${Answer}
    ```
 
 Sentiment:
 
 1. SST-2
    ```angular2html
-   Input: {sentence} Based on this review, would the user recommend this product? No or Yes?
+   Input: ${sentence} Based on this review, would the user recommend this product? No or Yes?
    Output: Yes / No
    ```
 Multiple-Choice QA:
 
 1. OpenbookQA
    ```angular2html
-   Input: {question} Which is the correct answer? - (A) {choice1} - (B) {choice2} - (C) {choice3} - (D) {choice4}
-   Output: {choice1} / {choice2} / {choice3} / {choice4}
+   Input: ${question} Which is the correct answer? - (A) ${choiceA} - (B) ${choiceB} - (C) ${choiceC} - (D) ${choiceD}
+   Output: ${choiceA} / ${choiceB} / ${choiceC} / ${choiceD}
    ```
 Sentence Completion:
 
 1. COPA
    ```angular2html
-   Input: {premise} {% if question == "cause" %} This happened because... {% else %} As a consequence... Help me pick the more plausible option: - {choice1} - {choice2}
-   Output: {choice1} / {choice2}
+   Input: ${premise} {% if question == "cause" %} This happened because... {% else %} As a consequence... Help me pick the more plausible option: - ${text1} - ${text2}
+   Output: ${text1} / ${text2}
    ```
 Coreference Resolution:
 1. Winogrande:
    ```angular2html    
-   Input: {sentence} In the previous sentence, does _ refer to {option1} or {option2}?
-   Output: {option1} / {option2}
+   Input: ${sentence} In the previous sentence, does _ refer to ${option1} or ${option2}?
+   Output: ${option1} / ${option2}
    ```
 Word Sense Disambiguation:
 1. WiC
    ```angular2html
-   Input: Does the word "{word}" have the same meaning in these two sentences? Yes, No? {sentence1} {sentence2}
-   Output: {sentence1} / {sentence2}
+   Input: Does the word "{word}" have the same meaning in these two sentences? Yes, No? ${sentence1} ${sentence2}
+   Output: ${sentence1} / ${sentence2}
    ```
 Natural Language Inference:
 
 1. MNLI:
    ```angular2html
-   Input: {premise} Question: Does this imply that {hypothesis}? Please response with 'Yes', 'No', or 'Maybe'.
+   Input: ${premise} Question: Does this imply that ${hypothesis}? Please response with 'Yes', 'No', or 'Maybe'.
    Output: Yes / No / Maybe
    ```
 2. RTE
    ```angular2html  
-   Input: Given {premise} Is it guaranteed true that "{hypothesis}"? Yes or no?
+   Input: Given ${premise} Is it guaranteed true that "${hypothesis}"? Yes or no?
    Output: Yes / no
    ```
 #### Results on _Unseen Datasets_
