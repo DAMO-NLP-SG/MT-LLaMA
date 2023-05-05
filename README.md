@@ -110,7 +110,7 @@ Coreference Resolution:
 Word Sense Disambiguation:
 1. WiC
    ```angular2html
-   Input: Does the word "{word}" have the same meaning in these two sentences? Yes, No? ${sentence1} ${sentence2}
+   Input: Does the word "${word}" have the same meaning in these two sentences? Yes, No? ${sentence1} ${sentence2}
    Output: ${sentence1} / ${sentence2}
    ```
 Natural Language Inference:
