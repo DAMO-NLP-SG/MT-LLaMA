@@ -25,7 +25,7 @@ Our MT-LLaMA is already on the Huggingface Model Hub. Since the application of o
 * Download the weight delta from [here]() and obtain the weights of MT-LLaMA by adding delta weights to the original ones.
 ```bash
 
-python3 /mtlama/model/apply_delta.py \
+python3 -m mtllama.model.apply_delta.py \
     --base-model-path /path/to/llama-7b \
     --target-model-path /output/path/to/mt-llama-7b \
     --delta-path /path/to/mt-llama-7b-delta
