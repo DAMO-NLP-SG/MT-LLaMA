@@ -22,9 +22,8 @@ MT-LLaMA: Yes, everyone likes the newest benefits.
 ## Model Weights
 Our MT-LLaMA is already on the Huggingface Model Hub. Since the application of original LLaMA weights is required, we only upload the weight delta against original LLaMA 
 * Get the original LLaMA weights in the huggingface format by following the instructions [here](https://huggingface.co/docs/transformers/main/model_doc/llama).
-* Download the weight delta from [here]() and obtain the weights of MT-LLaMA by adding delta weights to the original ones.
+* Download the weight delta from [here](https://huggingface.co/DAMO-NLP-SG/mt-llama-7b-delta/tree/main) and obtain the weights of MT-LLaMA by adding delta weights to the original ones.
 ```bash
-
 python3 -m mtllama.model.apply_delta.py \
     --base-model-path /path/to/llama-7b \
     --target-model-path /output/path/to/mt-llama-7b \
