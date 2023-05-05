@@ -135,3 +135,17 @@ Natural Language Inference:
 |:------------|-------------|--------------------|------------|-------------|------------|
 | LLaMA-7b    | 56.0        | 49.3               | 51.7       | 30.2        | 52.7       |
 | MT-LLaMA-7b | 88.0        | 54.9               | 52.2       | 49.6        | 79.1       |
+
+## Acknowledgement
+* Our training codes are largely borrowed from [FastChat](https://github.com/lm-sys/FastChat)
+* We are also grateful for the efforts of [LLaMA](https://github.com/facebookresearch/llama) (from FAIR) and [T0](https://github.com/bigscience-workshop/t-zero) (from BigScience), which serve as the foundation of our work 
+
+If you find this resource useful, please cite the repo as follows:
+```
+@software{damonlpsg2023mtllama,
+  author = {Xu, Weiwen and Li, Xin and Bing, Lidong},
+  title = {Multi-task Instruction-tuned LLaMA},
+  year = 2023,
+  url = {https://github.com/DAMO-NLP-SG/MT-LLaMA}
+}
+```
